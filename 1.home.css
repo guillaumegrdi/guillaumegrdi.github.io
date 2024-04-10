@@ -133,6 +133,7 @@ body {
   position: fixed;
   box-shadow: 15px 15px 1000px 50px rgb(255, 255, 255);
   z-index: -1000;
+  animation: appearance 10s;
 }
 .main-container {
   width: 100vw;
@@ -426,12 +427,12 @@ body {
     visibility: hidden;
     margin-left: 600px;
   }
-  84.999% {
+  64.999% {
     visibility: hidden;
   }
-  85% {
+  65% {
     visibility: visible;
-    margin-left: 300px;
+    margin-left: 600px;
   }
   to {
     margin-left: 0;
