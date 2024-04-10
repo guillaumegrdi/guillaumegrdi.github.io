@@ -1,3 +1,4 @@
+const title1 = document.getElementById("title-1");
 const li1 = document.getElementById("li-1");
 const li2 = document.getElementById("li-2");
 const li3 = document.getElementById("li-3");
@@ -46,10 +47,10 @@ li3.addEventListener("click", (e) => {
 });
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY < 400) {
+  if (window.scrollY < 350) {
     li1.style.backgroundColor = "";
   }
-  if (window.scrollY >= 400) {
+  if (window.scrollY >= 350) {
     li1.style.backgroundColor = "rgb(43, 110, 49)";
   }
   if (window.scrollY >= 2300) {
