@@ -46,11 +46,14 @@ li3.addEventListener("click", (e) => {
 });
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY <= 400) {
+  if (window.scrollY < 400) {
     li1.style.backgroundColor = "";
   }
   if (window.scrollY >= 400) {
     li1.style.backgroundColor = "rgb(43, 110, 49)";
+  }
+  if (window.scrollY >= 2300) {
+    li1.style.backgroundColor = "";
   }
   if (window.scrollY < 2300) {
     li2.style.backgroundColor = "";
@@ -60,13 +63,10 @@ window.addEventListener("scroll", (e) => {
     li2.style.backgroundColor = "rgb(43, 110, 49)";
   }
   if (window.scrollY <= 5250) {
-    li1.style.backgroundColor = "";
-    li2.style.backgroundColor = "rgb(43, 110, 49)";
     li3.style.backgroundColor = "";
   }
 
   if (window.scrollY >= 5250) {
-    li1.style.backgroundColor = "";
     li2.style.backgroundColor = "";
     li3.style.backgroundColor = "rgb(43, 110, 49)";
   }
@@ -93,7 +93,7 @@ zoombtn2.addEventListener("click", () => {
 zoombtn3.addEventListener("click", () => {
   replaybtn.style.visibility = "hidden";
   lecteur.style.display = "block";
-  lecteurcontainer.innerHTML = `<video src="./Vidéo sans titre ‐ Réalisée avec Clipchamp.mp4" id="imagetozoom3" autoplay muted></video> `;
+  lecteurcontainer.innerHTML = `<video src="craft.mov" id="imagetozoom3" autoplay muted></video> `;
   const imagetozoom3 = document.getElementById("imagetozoom3");
   imagetozoom3.style.width = "1000px";
   imagetozoom3.style.height = "550px";
@@ -128,7 +128,7 @@ zoombtn5.addEventListener("click", () => {
 replaybtn.addEventListener("click", (e) => {
   replaybtn.style.visibility = "hidden";
   lecteur.style.display = "block";
-  lecteurcontainer.innerHTML = `<video src="./Vidéo sans titre ‐ Réalisée avec Clipchamp.mp4" id="imagetozoom3" autoplay muted></video>`;
+  lecteurcontainer.innerHTML = `<video src="craft.mov" id="imagetozoom3" autoplay muted></video>`;
   const imagetozoom3 = document.getElementById("imagetozoom3");
   imagetozoom3.style.width = "1000px";
   imagetozoom3.style.height = "550px";
@@ -162,7 +162,7 @@ bluespan2.addEventListener("click", () => {
 bluespan3.addEventListener("click", () => {
   replaybtn.style.visibility = "hidden";
   lecteur.style.display = "block";
-  lecteurcontainer.innerHTML = `<video src="./video-sans-titre-realisee-avec-clipchamp_eEAm4jvf.mp4" id="imagetozoom3" autoplay muted ></video> `;
+  lecteurcontainer.innerHTML = `<video src="craft.mov" id="imagetozoom3" autoplay muted ></video> `;
   const imagetozoom3 = document.getElementById("imagetozoom3");
   imagetozoom3.style.width = "1000px";
   imagetozoom3.style.height = "550px";
