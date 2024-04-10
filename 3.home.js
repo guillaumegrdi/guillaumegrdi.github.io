@@ -46,7 +46,7 @@ li3.addEventListener("click", (e) => {
 });
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY < 400) {
+  if (window.scrollY <= 400) {
     li1.style.backgroundColor = "";
   }
   if (window.scrollY >= 400) {
@@ -71,7 +71,6 @@ window.addEventListener("scroll", (e) => {
     li3.style.backgroundColor = "rgb(43, 110, 49)";
   }
 });
-
 
 zoombtn1.addEventListener("click", () => {
   lecteur.style.display = "block";
@@ -101,9 +100,9 @@ zoombtn3.addEventListener("click", () => {
   imagetozoom3.addEventListener("timeupdate", (e) => {
     console.log(e);
   });
-  imagetozoom3.addEventListener('load', (e) =>{
+  imagetozoom3.addEventListener("load", (e) => {
     console.log(e);
-  })
+  });
   imagetozoom3.addEventListener("pause", () => {
     replaybtn.style.visibility = "visible";
     console.log(replaybtn);
