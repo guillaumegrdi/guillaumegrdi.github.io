@@ -4,6 +4,8 @@ const li2 = document.getElementById("li-2");
 const li3 = document.getElementById("li-3");
 const li4 = document.getElementById("li-4");
 const li5 = document.getElementById("li-5");
+const text1 = document.getElementById("text-1")
+const text2 = document.querySelector(".text-2")
 const bluespan1 = document.querySelector(".bluespan1");
 const bluespan2 = document.querySelector(".bluespan2");
 const bluespan3 = document.querySelector(".bluespan3");
@@ -26,6 +28,7 @@ imagetozoom2.style.marginTop = "-50px";
 const blancsouris = document.getElementById("blancsouris");
 const body = document.querySelector("body");
 const replaybtn = document.getElementById("replay-btn");
+console.log(text2);
 
 li1.addEventListener("click", (e) => {
   window.scrollTo({
@@ -52,6 +55,13 @@ window.addEventListener("scroll", (e) => {
   }
   if (window.scrollY >= 350) {
     li1.style.backgroundColor = "rgb(43, 110, 49)";
+    text1.style.animationName = "slidetextleft"
+    text1.style.animationDuration = "1000ms"
+    text1.style.marginLeft ="30px"
+  }
+  if (window.scrollY >= 500) {
+    text2.style.animationName = "appearance"
+    text2.style.animationDuration = "500ms"
   }
   if (window.scrollY >= 2300) {
     li1.style.backgroundColor = "";
@@ -319,3 +329,5 @@ window.addEventListener("keydown", (e) => {
     });
   }
 });
+
+
