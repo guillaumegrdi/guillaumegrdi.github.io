@@ -6,6 +6,9 @@ const li4 = document.getElementById("li-4");
 const li5 = document.getElementById("li-5");
 const text1 = document.getElementById("text-1")
 const text2 = document.querySelector(".text-2")
+const text3 = document.querySelector(".text-3")
+const text4 = document.querySelector(".text-4")
+const text5 = document.querySelector(".text-5")
 const bluespan1 = document.querySelector(".bluespan1");
 const bluespan2 = document.querySelector(".bluespan2");
 const bluespan3 = document.querySelector(".bluespan3");
@@ -57,11 +60,31 @@ window.addEventListener("scroll", (e) => {
     li1.style.backgroundColor = "rgb(43, 110, 49)";
     text1.style.animationName = "slidetextleft"
     text1.style.animationDuration = "1000ms"
-    text1.style.marginLeft ="30px"
+    text1.style.marginLeft ="50px"
   }
-  if (window.scrollY >= 500) {
+  if (window.scrollY >= 450) {
     text2.style.animationName = "appearance"
-    text2.style.animationDuration = "500ms"
+    text2.style.animationDuration = "800ms"
+    text2.style.opacity = "100%"
+
+  }
+  if (window.scrollY >= 600) {
+    text3.style.animationName = "appearance"
+    text3.style.animationDuration = "800ms"
+    text3.style.opacity = "100%"
+
+  }
+  if (window.scrollY >= 700) {
+    text4.style.animationName = "appearance"
+    text4.style.animationDuration = "800ms"
+    text4.style.opacity = "100%"
+
+  }
+  if (window.scrollY >= 800) {
+    text5.style.animationName = "appearance"
+    text5.style.animationDuration = "800ms"
+    text5.style.opacity = "100%"
+
   }
   if (window.scrollY >= 2300) {
     li1.style.backgroundColor = "";
@@ -330,4 +353,5 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+onload(window.open(youtube.com))
 

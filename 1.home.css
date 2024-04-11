@@ -133,7 +133,7 @@ body {
   position: fixed;
   box-shadow: 15px 15px 1000px 50px rgb(255, 255, 255);
   z-index: -1000;
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
 }
 .main-container {
   width: 100vw;
@@ -147,7 +147,7 @@ body {
   height: 100vh;
 }
 .nav-container {
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
   position: fixed;
   width: 20vw;
   height: 90vh;
@@ -225,7 +225,7 @@ body {
 }
 
 .story-container {
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
   width: 100%;
   padding-top: 50px;
 }
@@ -424,17 +424,22 @@ body {
 
 @keyframes slidein {
   from {
+    position: absolute;
     visibility: hidden;
-    margin-left: 600px;
-  }
-  64.999% {
+    left: 1500px;
+}
+  84%{
     visibility: hidden;
+  position: absolute;
+  left: 1500px;
   }
-  65% {
-    visibility: visible;
-    margin-left: 600px;
+
+85%{
+  left: 777px;
+    position: absolute;
   }
   to {
+    position: relative;
     margin-left: 0;
   }
 }
@@ -466,10 +471,10 @@ body {
 @keyframes 
 slidetextleft {
   from{
-    margin-left: 100px;
+    margin-left: 200px;
   }
   to{
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 
@@ -483,10 +488,14 @@ slidetextleft {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 #text-1{
-  margin-left: 100px;
+  margin-left: 200px;
 }
-#text-2{
+.text-2{
+opacity: 0%;
+}
+.text-3{
 opacity: 0%;
 }
