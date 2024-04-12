@@ -4,11 +4,23 @@ const li2 = document.getElementById("li-2");
 const li3 = document.getElementById("li-3");
 const li4 = document.getElementById("li-4");
 const li5 = document.getElementById("li-5");
-const text1 = document.getElementById("text-1")
-const text2 = document.querySelector(".text-2")
-const text3 = document.querySelector(".text-3")
-const text4 = document.querySelector(".text-4")
-const text5 = document.querySelector(".text-5")
+const text1 = document.getElementById("text-1");
+const text2 = document.querySelector(".text-2");
+const text3 = document.querySelector(".text-3");
+const text4 = document.querySelector(".text-4");
+const text5 = document.querySelector(".text-5");
+const text6 = document.querySelector(".text-6");
+const text7 = document.querySelector(".text-7");
+const text8 = document.querySelector(".text-8");
+const tool1 = document.querySelector(".tool-1");
+const tool2 = document.querySelector(".tool-2");
+const tool3 = document.querySelector(".tool-3");
+const img6 = document.querySelector(".img6");
+const img7 = document.querySelector(".img7");
+const img8 = document.querySelector(".img8");
+const tooltext1 = document.getElementById("tool-text-1");
+const tooltext2 = document.getElementById("tool-text-2");
+const tooltext3 = document.getElementById("tool-text-3");
 const bluespan1 = document.querySelector(".bluespan1");
 const bluespan2 = document.querySelector(".bluespan2");
 const bluespan3 = document.querySelector(".bluespan3");
@@ -41,13 +53,13 @@ li1.addEventListener("click", (e) => {
 });
 li2.addEventListener("click", (e) => {
   window.scrollTo({
-    top: 2300,
+    top: 2500,
     behavior: "smooth",
   });
 });
 li3.addEventListener("click", (e) => {
   window.scrollTo({
-    top: 5250,
+    top: 5550,
     behavior: "smooth",
   });
 });
@@ -58,43 +70,132 @@ window.addEventListener("scroll", (e) => {
   }
   if (window.scrollY >= 350) {
     li1.style.backgroundColor = "rgb(43, 110, 49)";
-    text1.style.animationName = "slidetextleft"
-    text1.style.animationDuration = "1000ms"
-    text1.style.marginLeft ="50px"
   }
-  if (window.scrollY >= 450) {
-    text2.style.animationName = "appearance"
-    text2.style.animationDuration = "800ms"
-    text2.style.opacity = "100%"
+  if (window.scrollY < 400) {
+    text1.style.animationName = "slidetextright";
+    text1.style.animationDuration = "1000ms";
+    text1.style.marginLeft = "200px";
+  }
 
+  if (window.scrollY >= 400) {
+    text1.style.animationName = "slidetextleft";
+    text1.style.animationDuration = "1000ms";
+    text1.style.marginLeft = "50px";
   }
-  if (window.scrollY >= 600) {
-    text3.style.animationName = "appearance"
-    text3.style.animationDuration = "800ms"
-    text3.style.opacity = "100%"
 
+  if (window.scrollY < 1000) {
+    text2.style.animationName = "disappearance1";
+    text2.style.animationDuration = "400ms";
+    text2.style.opacity = "0%";
+    text3.style.animationName = "disappearance1";
+    text3.style.animationDuration = "400ms";
+    text3.style.opacity = "0%";
+    text4.style.animationName = "disappearance1";
+    text4.style.animationDuration = "400ms";
+    text4.style.opacity = "0%";
+    text5.style.animationName = "disappearance1";
+    text5.style.animationDuration = "400ms";
+    text5.style.opacity = "0%";
   }
-  if (window.scrollY >= 700) {
-    text4.style.animationName = "appearance"
-    text4.style.animationDuration = "800ms"
-    text4.style.opacity = "100%"
-
-  }
-  if (window.scrollY >= 800) {
-    text5.style.animationName = "appearance"
-    text5.style.animationDuration = "800ms"
-    text5.style.opacity = "100%"
-
-  }
-  if (window.scrollY >= 2300) {
-    li1.style.backgroundColor = "";
+  if (window.scrollY >= 1000) {
+    text2.style.animationName = "appearance1";
+    text2.style.animationDuration = "400ms";
+    text2.style.opacity = "100%";
+    text3.style.animationName = "appearance1";
+    text3.style.animationDuration = "400ms";
+    text3.style.opacity = "100%";
+    text4.style.animationName = "appearance1";
+    text4.style.animationDuration = "400ms";
+    text4.style.opacity = "100%";
+    text5.style.animationName = "appearance1";
+    text5.style.animationDuration = "400ms";
+    text5.style.opacity = "100%";
   }
   if (window.scrollY < 2300) {
     li2.style.backgroundColor = "";
   }
   if (window.scrollY >= 2300) {
     li1.style.backgroundColor = "";
+  }
+
+  if (window.scrollY < 2600) {
+    tooltext1.style.animationName = "distoolslide";
+    tooltext1.style.animationDuration = "2000ms";
+    tooltext1.style.visibility = "hidden";
+    tool1.style.animationName = "disrotateP";
+    tool1.style.animationDuration = "2000ms";
+  }
+  if (window.scrollY < 2760) {
+    tooltext2.style.animationName = "distoolslide";
+    tooltext2.style.animationDuration = "2000ms";
+    tooltext2.style.visibility = "hidden";
+    tool2.style.animationName = "disrotate";
+    tool2.style.animationDuration = "2000ms";
+  }
+  if (window.scrollY < 2960) {
+    tooltext3.style.animationName = "distoolslide";
+    tooltext3.style.animationDuration = "2000ms";
+    tooltext3.style.visibility = "hidden";
+    tool3.style.animationName = "disrotate";
+    tool3.style.animationDuration = "2000ms";
+  }
+  if (window.scrollY >= 2600) {
+    tooltext1.style.animationName = "toolslide";
+    tooltext1.style.animationDuration = "2000ms";
+    tooltext1.style.visibility = "visible";
+    tool1.style.animationName = "rotateP";
+    tool1.style.animationDuration = "2000ms";
+    tool1.style.transform = "rotate(90)";
+  }
+  if (window.scrollY >= 2760) {
+    tooltext2.style.animationName = "toolslide";
+    tooltext2.style.animationDuration = "2000ms";
+    tooltext2.style.visibility = "visible";
+    tool2.style.animationName = "rotate";
+    tool2.style.animationDuration = "2000ms";
+    tool2.style.transform = "rotate(0)";
+  }
+  if (window.scrollY >= 2960) {
+    tooltext3.style.animationName = "toolslide";
+    tooltext3.style.animationDuration = "2000ms";
+    tooltext3.style.visibility = "visible";
+    tool3.style.animationName = "rotate";
+    tool3.style.animationDuration = "2000ms";
+    tool3.style.transform = "rotate(0)";
+  }
+  if (window.scrollY >= 2300) {
+    li1.style.backgroundColor = "";
     li2.style.backgroundColor = "rgb(43, 110, 49)";
+  }
+  if (window.scrollY < 4280) {
+    img6.style.animationName = "dismarche";
+    img6.style.animationDuration = "1.5s";
+    img6.style.marginRight = "300px";
+  }
+  if (window.scrollY >= 4280) {
+    img6.style.animationName = "marche";
+    img6.style.animationDuration = "1.5s";
+    img6.style.marginRight = "0";
+  }
+  if (window.scrollY < 4480) {
+    img7.style.animationName = "dismarche";
+    img7.style.animationDuration = "1.5s";
+    img7.style.marginRight = "300px";
+  }
+  if (window.scrollY >= 4480) {
+    img7.style.animationName = "marche";
+    img7.style.animationDuration = "1.5s";
+    img7.style.marginRight = "0";
+  }
+  if (window.scrollY < 4600) {
+    img8.style.animationName = "dismarche";
+    img8.style.animationDuration = "1.5s";
+    img8.style.marginRight = "300px";
+  }
+  if (window.scrollY >= 4600) {
+    img8.style.animationName = "marche";
+    img8.style.animationDuration = "1.5s";
+    img8.style.marginRight = "0";
   }
   if (window.scrollY <= 5250) {
     li3.style.backgroundColor = "";
@@ -353,5 +454,6 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-onload(window.open(youtube.com))
-
+window.addEventListener("scroll", (e) => {
+  console.log(window.scrollY);
+});

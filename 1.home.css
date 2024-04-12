@@ -120,18 +120,15 @@ body {
 }
 #link {
   text-decoration: underline;
-  color: rgb(85, 26, 139);
   transition: 300ms;
+  color: rgb(154, 0, 154);
 }
-#link:hover {
-  color: rgb(138, 46, 224);
-  transition: 300ms;
-}
+
 #blancsouris {
   width: 0px;
   height: 0px;
   position: fixed;
-  box-shadow: 15px 15px 1000px 50px rgb(255, 255, 255);
+  box-shadow: 15px 15px 170px 40px rgb(255, 255, 255);
   z-index: -1000;
   animation: appearance 10s;
 }
@@ -147,7 +144,7 @@ body {
   height: 100vh;
 }
 .nav-container {
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
   position: fixed;
   width: 20vw;
   height: 90vh;
@@ -225,13 +222,22 @@ body {
 }
 
 .story-container {
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
   width: 100%;
   padding-top: 50px;
+}
+.functioning-container {
+  /* animation: appearance 10s; */
+}
+.moding-container {
+  /* animation: appearance 10s; */
 }
 
 .story-container-section-title span {
   font-family: Monaco;
+}
+.functioning-container-section-title-1 {
+  margin-bottom: 0;
 }
 .functioning-container-section-title-1 span {
   font-family: Monaco;
@@ -257,7 +263,7 @@ body {
 }
 .functioning-container-subsection-title {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .story-content-container {
@@ -424,22 +430,14 @@ body {
 
 @keyframes slidein {
   from {
-    position: absolute;
+    margin-left: 700px;
     visibility: hidden;
-    left: 1500px;
-}
-  84%{
-    visibility: hidden;
-  position: absolute;
-  left: 1500px;
   }
-
-85%{
-  left: 777px;
-    position: absolute;
+  85% {
+    visibility: hidden;
+    margin-left: 700px;
   }
   to {
-    position: relative;
     margin-left: 0;
   }
 }
@@ -452,6 +450,35 @@ body {
   }
   to {
     opacity: 100%;
+  }
+}
+@keyframes disappearance {
+  from {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+@keyframes appearance1 {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes disappearance1 {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
   }
 }
 @keyframes centerin {
@@ -468,13 +495,185 @@ body {
     margin-right: 0;
   }
 }
-@keyframes 
-slidetextleft {
-  from{
+@keyframes slidetextleft {
+  from {
     margin-left: 200px;
   }
-  to{
+  to {
     margin-left: 50px;
+  }
+}
+@keyframes slidetextright {
+  from {
+    margin-left: 50px;
+  }
+  to {
+    margin-left: 200px;
+  }
+}
+@keyframes disrotateP {
+  from {
+    transform: rotate(450deg);
+  }
+  to {
+    transform: rotate(90);
+  }
+}
+@keyframes disrotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes rotateP {
+  from {
+    transform: rotate(90);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes toolslide {
+  from {
+    padding-left: 300px;
+    visibility: hidden;
+  }
+  10% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: visible;
+  }
+
+  to {
+    visibility: visible;
+    padding-left: 0;
+  }
+}
+@keyframes distoolslide {
+  from {
+    visibility: visible;
+    padding-left: 0;
+  }
+  10% {
+    visibility: hidden;
+  }
+  60% {
+    padding-left: 300px;
+  }
+  to {
+    padding-left: 300px;
+    visibility: hidden;
+  }
+}
+@keyframes marche {
+  from {
+    margin-right: 300px;
+  }
+  9.999999% {
+    margin-right: 300px;
+  }
+  10% {
+    margin-right: 260px;
+  }
+  19.99% {
+    margin-right: 260px;
+  }
+  20% {
+    margin-right: 220px;
+  }
+  29.99% {
+    margin-right: 220px;
+  }
+  30% {
+    margin-right: 180px;
+  }
+  39.99% {
+    margin-right: 180px;
+  }
+  40% {
+    margin-right: 140px;
+  }
+  49.99% {
+    margin-right: 140px;
+  }
+  50% {
+    margin-right: 100px;
+  }
+  59.99% {
+    margin-right: 100px;
+  }
+  60% {
+    margin-right: 60px;
+  }
+  69.99% {
+    margin-right: 60px;
+  }
+  70% {
+    margin-right: 0px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes dismarche {
+  from {
+    margin-right: 0px;
+  }
+  9.999999% {
+    margin-right: 0px;
+  }
+  10% {
+    margin-right: 60px;
+  }
+  19.99% {
+    margin-right: 60px;
+  }
+  20% {
+    margin-right: 100px;
+  }
+  29.99% {
+    margin-right: 100px;
+  }
+  30% {
+    margin-right: 140px;
+  }
+  39.99% {
+    margin-right: 140px;
+  }
+  40% {
+    margin-right: 180px;
+  }
+  49.99% {
+    margin-right: 180px;
+  }
+  50% {
+    margin-right: 220px;
+  }
+  59.99% {
+    margin-right: 220px;
+  }
+  60% {
+    margin-right: 260px;
+  }
+  69.99% {
+    margin-right: 260px;
+  }
+  70% {
+    margin-right: 300px;
+  }
+  to {
+    margin-right: 300px;
   }
 }
 
@@ -488,14 +687,48 @@ slidetextleft {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-#text-1{
+
+#text-1 {
+  width: 500px;
   margin-left: 200px;
 }
-.text-2{
-opacity: 0%;
+.text-2 {
+  opacity: 0%;
 }
-.text-3{
-opacity: 0%;
+.text-3 {
+  opacity: 0%;
+}
+
+#img {
+  transition: 500ms;
+}
+#img:hover {
+  transition: 500ms;
+  transform: scale(0.97);
+}
+
+#tool-text-1 {
+  height: 140px;
+  visibility: hidden;
+  left: 300px;
+  width: 1000px;
+}
+#tool-text-2 {
+  height: 140px;
+  visibility: hidden;
+  left: 300px;
+  width: 1000px;
+}
+#tool-text-3 {
+  visibility: hidden;
+  left: 300px;
+  width: 1000px;
+}
+
+#fs40 {
+  font-size: 40px;
+}
+#fs30 {
+  font-size: 30px;
 }
