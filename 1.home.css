@@ -144,7 +144,9 @@ body {
   height: 100vh;
 }
 .nav-container {
-  /* animation: appearance 10s; */
+  background-color: black;
+  z-index: 5;
+  animation: appearance 10s;
   position: fixed;
   width: 20vw;
   height: 90vh;
@@ -222,15 +224,15 @@ body {
 }
 
 .story-container {
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
   width: 100%;
   padding-top: 50px;
 }
 .functioning-container {
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
 }
 .moding-container {
-  /* animation: appearance 10s; */
+  animation: appearance 10s;
 }
 
 .story-container-section-title span {
@@ -584,43 +586,58 @@ body {
     margin-right: 300px;
   }
   10% {
-    margin-right: 260px;
+    margin-right: 270px;
   }
   19.99% {
-    margin-right: 260px;
+    margin-right: 270px;
   }
   20% {
-    margin-right: 220px;
+    margin-right: 240px;
   }
   29.99% {
-    margin-right: 220px;
+    margin-right: 240px;
   }
   30% {
-    margin-right: 180px;
+    margin-right: 210px;
   }
   39.99% {
-    margin-right: 180px;
+    margin-right: 210px;
   }
   40% {
-    margin-right: 140px;
+    margin-right: 180px;
   }
   49.99% {
-    margin-right: 140px;
+    margin-right: 180px;
   }
   50% {
-    margin-right: 100px;
+    margin-right: 150px;
   }
   59.99% {
-    margin-right: 100px;
+    margin-right: 150px;
   }
   60% {
-    margin-right: 60px;
+    margin-right: 120px;
   }
   69.99% {
-    margin-right: 60px;
+    margin-right: 120px;
   }
   70% {
-    margin-right: 0px;
+    margin-right: 90px;
+  }
+  79.99% {
+    margin-right: 90px;
+  }
+  80% {
+    margin-right: 60px;
+  }
+  89.99% {
+    margin-right: 60px;
+  }
+  90% {
+    margin-right: 30px;
+  }
+  99.99% {
+    margin-right: 30px;
   }
   to {
     margin-right: 0;
@@ -634,43 +651,58 @@ body {
     margin-right: 0px;
   }
   10% {
-    margin-right: 60px;
+    margin-right: 30px;
   }
   19.99% {
-    margin-right: 60px;
+    margin-right: 30px;
   }
   20% {
-    margin-right: 100px;
+    margin-right: 60px;
   }
   29.99% {
-    margin-right: 100px;
+    margin-right: 60px;
   }
   30% {
-    margin-right: 140px;
+    margin-right: 90px;
   }
   39.99% {
-    margin-right: 140px;
+    margin-right: 90px;
   }
   40% {
-    margin-right: 180px;
+    margin-right: 120px;
   }
   49.99% {
-    margin-right: 180px;
+    margin-right: 120px;
   }
   50% {
-    margin-right: 220px;
+    margin-right: 150px;
   }
   59.99% {
-    margin-right: 220px;
+    margin-right: 150px;
   }
   60% {
-    margin-right: 260px;
+    margin-right: 180px;
   }
   69.99% {
-    margin-right: 260px;
+    margin-right: 180px;
   }
   70% {
-    margin-right: 300px;
+    margin-right: 210px;
+  }
+  79.99% {
+    margin-right: 210px;
+  }
+  80% {
+    margin-right: 240px;
+  }
+  89.99% {
+    margin-right: 240px;
+  }
+  90% {
+    margin-right: 270px;
+  }
+  99.99% {
+    margin-right: 270px;
   }
   to {
     margin-right: 300px;
@@ -731,4 +763,71 @@ body {
 }
 #fs30 {
   font-size: 30px;
+}
+.moding-content-container-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+.slider-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  height: 90%;
+}
+.slider-arrow-container span {
+  z-index: 5;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 300ms;
+}
+.slider-arrow-container span:hover {
+  transform: scale(0.9);
+  transition: 300ms;
+}
+.slider-arrow-container span:active {
+  transform: scale(0.8);
+  transition: 300ms;
+}
+.slider-container {
+  display: flex;
+
+  padding: 25px;
+  width: 850px;
+  height: 100%;
+  /* border: 1px solid white; */
+}
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  margin-right: 205px;
+  transition: 2s;
+}
+.slider-preview-container {
+  width: 100%;
+  height: 80px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-preview {
+  width: 850px;
+  height: 80px;
+}
+#sliderDown {
+  opacity: 0;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
 }

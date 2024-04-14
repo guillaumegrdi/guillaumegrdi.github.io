@@ -18,6 +18,11 @@ const tool3 = document.querySelector(".tool-3");
 const img6 = document.querySelector(".img6");
 const img7 = document.querySelector(".img7");
 const img8 = document.querySelector(".img8");
+const img9 = document.getElementById("img9");
+const img10 = document.getElementById("img10");
+const sliderUp = document.getElementById("sliderUp");
+const sliderDown = document.getElementById("sliderDown");
+let sliderValue = 0;
 const tooltext1 = document.getElementById("tool-text-1");
 const tooltext2 = document.getElementById("tool-text-2");
 const tooltext3 = document.getElementById("tool-text-3");
@@ -176,6 +181,9 @@ window.addEventListener("scroll", (e) => {
     img6.style.animationName = "marche";
     img6.style.animationDuration = "1.5s";
     img6.style.marginRight = "0";
+    text6.style.animationName = "marchetext";
+    text6.style.animationDuration = "1.5s";
+    text6.style.marginLeft = "0";
   }
   if (window.scrollY < 4480) {
     img7.style.animationName = "dismarche";
@@ -456,4 +464,25 @@ window.addEventListener("keydown", (e) => {
 
 window.addEventListener("scroll", (e) => {
   console.log(window.scrollY);
+});
+
+sliderUp.addEventListener("click", () => {
+  if (sliderValue == 0) {
+    img9.style.transform = "translate(-1000px)";
+    img9.style.visibility = "hidden";
+    img10.style.transform = "translate(-1000px)";
+    sliderDown.style.opacity = "100%";
+  }
+  sliderValue += 1;
+});
+
+sliderDown.addEventListener("click", () => {
+  if (sliderValue == 1) {
+    img9.style.transform = "translate(0px)";
+    img9.style.visibility = "visible";
+    img10.style.transform = "translate(0px)";
+    sliderDown.style.transition = "300ms";
+    sliderDown.style.opacity = "0%";
+  }
+  sliderValue -= 1;
 });
