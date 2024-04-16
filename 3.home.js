@@ -19,6 +19,8 @@ const img6 = document.querySelector(".img6");
 const img7 = document.querySelector(".img7");
 const img8 = document.querySelector(".img8");
 const img9 = document.getElementById("img9");
+const miniimg9 = document.getElementById("miniimg9");
+const miniimg10 = document.getElementById("miniimg10");
 const img10 = document.getElementById("img10");
 const sliderUp = document.getElementById("sliderUp");
 const sliderDown = document.getElementById("sliderDown");
@@ -468,10 +470,14 @@ window.addEventListener("scroll", (e) => {
 
 sliderUp.addEventListener("click", () => {
   if (sliderValue == 0) {
-    img9.style.transform = "translate(-1000px)";
+    img9.style.transform = "translate(-965px)";
     img9.style.visibility = "hidden";
-    img10.style.transform = "translate(-1000px)";
-    sliderDown.style.opacity = "100%";
+    img10.style.transform = "translate(-965px)";
+    sliderDown.style.visibility = "visible";
+    miniimg9.classList.remove("selectionned");
+    miniimg9.classList.add("unselectionned");
+    miniimg10.classList.remove("unselectionned");
+    miniimg10.classList.add("selectionned");
   }
   sliderValue += 1;
 });
@@ -481,8 +487,11 @@ sliderDown.addEventListener("click", () => {
     img9.style.transform = "translate(0px)";
     img9.style.visibility = "visible";
     img10.style.transform = "translate(0px)";
-    sliderDown.style.transition = "300ms";
-    sliderDown.style.opacity = "0%";
+    sliderDown.style.visibility = "hidden";
+    miniimg9.classList.add("selectionned");
+    miniimg9.classList.remove("unselectionned");
+    miniimg10.classList.add("unselectionned");
+    miniimg10.classList.remove("selectionned");
   }
   sliderValue -= 1;
 });
