@@ -19,11 +19,18 @@ const img6 = document.querySelector(".img6");
 const img7 = document.querySelector(".img7");
 const img8 = document.querySelector(".img8");
 const img9 = document.getElementById("img9");
+const img10 = document.getElementById("img10");
+const img11 = document.getElementById("img11");
+const img12 = document.getElementById("img12");
+const img13 = document.getElementById("img13");
 const miniimg9 = document.getElementById("miniimg9");
 const miniimg10 = document.getElementById("miniimg10");
-const img10 = document.getElementById("img10");
+const miniimg11 = document.getElementById("miniimg11");
+const miniimg12 = document.getElementById("miniimg12");
+const miniimg13 = document.getElementById("miniimg13");
 const sliderUp = document.getElementById("sliderUp");
 const sliderDown = document.getElementById("sliderDown");
+const slidertextarea = document.getElementById("slidertextarea");
 let sliderValue = 0;
 const tooltext1 = document.getElementById("tool-text-1");
 const tooltext2 = document.getElementById("tool-text-2");
@@ -467,31 +474,228 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("scroll", (e) => {
   console.log(window.scrollY);
 });
+sliderDown.addEventListener("click", () => {
+  console.log(sliderValue);
+  if (sliderValue == 4) {
+    img9.style.transform = "translate(-3000px)";
+    img10.style.transform = "translate(-3000px)";
+    img11.style.transform = "translate(-3000px)";
+    img12.style.transform = "translate(-3000px)";
+    img13.style.transform = "translate(-3000px)";
+    sliderUp.style.visibility = "visible";
+    miniimg12.classList.add("selectionned");
+    miniimg12.classList.remove("unselectionned");
+    miniimg13.classList.add("unselectionned");
+    miniimg13.classList.remove("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  }
+  if (sliderValue == 3) {
+    img9.style.transform = "translate(-2000px)";
+    img10.style.transform = "translate(-2000px)";
+    img11.style.transform = "translate(-2000px)";
+    img12.style.transform = "translate(-2000px)";
+    img13.style.transform = "translate(-2000px)";
+    miniimg11.classList.add("selectionned");
+    miniimg11.classList.remove("unselectionned");
+    miniimg12.classList.add("unselectionned");
+    miniimg12.classList.remove("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  }
+  if (sliderValue == 2) {
+    img9.style.transform = "translate(-1000px)";
+    img10.style.transform = "translate(-1000px)";
+    img11.style.transform = "translate(-1000px)";
+    img12.style.transform = "translate(-1000px)";
+    img13.style.transform = "translate(-1000px)";
+    miniimg10.classList.add("selectionned");
+    miniimg10.classList.remove("unselectionned");
+    miniimg11.classList.add("unselectionned");
+    miniimg11.classList.remove("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  }
+  if (sliderValue == 1) {
+    img9.style.transform = "translate(0)";
+    img10.style.transform = "translate(0)";
+    img11.style.transform = "translate(0)";
+    img12.style.transform = "translate(0)";
+    img13.style.transform = "translate(0)";
+    miniimg9.classList.add("selectionned");
+    miniimg9.classList.remove("unselectionned");
+    miniimg10.classList.add("unselectionned");
+    miniimg10.classList.remove("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+    sliderDown.style.visibility = "hidden";
+  }
+  sliderValue -= 1;
+});
 
 sliderUp.addEventListener("click", () => {
   if (sliderValue == 0) {
-    img9.style.transform = "translate(-965px)";
-    img9.style.visibility = "hidden";
-    img10.style.transform = "translate(-965px)";
+    img9.style.transform = "translate(-1000px)";
+    img10.style.transform = "translate(-1000px)";
+    img11.style.transform = "translate(-1000px)";
+    img12.style.transform = "translate(-1000px)";
+    img13.style.transform = "translate(-1000px)";
     sliderDown.style.visibility = "visible";
     miniimg9.classList.remove("selectionned");
     miniimg9.classList.add("unselectionned");
     miniimg10.classList.remove("unselectionned");
     miniimg10.classList.add("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
   }
+  if (sliderValue == 1) {
+    img9.style.transform = "translate(-2000px)";
+    img10.style.transform = "translate(-2000px)";
+    img11.style.transform = "translate(-2000px)";
+    img12.style.transform = "translate(-2000px)";
+    img13.style.transform = "translate(-2000px)";
+    sliderDown.style.visibility = "visible";
+    miniimg10.classList.remove("selectionned");
+    miniimg10.classList.add("unselectionned");
+    miniimg11.classList.remove("unselectionned");
+    miniimg11.classList.add("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+  }
+  if (sliderValue == 2) {
+    img9.style.transform = "translate(-3000px)";
+    img10.style.transform = "translate(-3000px)";
+    img11.style.transform = "translate(-3000px)";
+    img12.style.transform = "translate(-3000px)";
+    img13.style.transform = "translate(-3000px)";
+    sliderDown.style.visibility = "visible";
+    miniimg11.classList.remove("selectionned");
+    miniimg11.classList.add("unselectionned");
+    miniimg12.classList.remove("unselectionned");
+    miniimg12.classList.add("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+  }
+  if (sliderValue == 3) {
+    img9.style.transform = "translate(-4000px)";
+    img10.style.transform = "translate(-4000px)";
+    img11.style.transform = "translate(-4000px)";
+    img12.style.transform = "translate(-4020px)";
+    img13.style.transform = "translate(-4000px)";
+    sliderDown.style.visibility = "visible";
+    miniimg12.classList.remove("selectionned");
+    miniimg12.classList.add("unselectionned");
+    miniimg13.classList.remove("unselectionned");
+    miniimg13.classList.add("selectionned");
+    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+    sliderUp.style.visibility = "hidden";
+  }
+
   sliderValue += 1;
 });
 
-sliderDown.addEventListener("click", () => {
-  if (sliderValue == 1) {
-    img9.style.transform = "translate(0px)";
-    img9.style.visibility = "visible";
-    img10.style.transform = "translate(0px)";
-    sliderDown.style.visibility = "hidden";
-    miniimg9.classList.add("selectionned");
-    miniimg9.classList.remove("unselectionned");
-    miniimg10.classList.add("unselectionned");
-    miniimg10.classList.remove("selectionned");
-  }
-  sliderValue -= 1;
+miniimg9.addEventListener("click", () => {
+  sliderValue = 0;
+  img9.style.transform = "translate(0)";
+  img10.style.transform = "translate(0)";
+  img11.style.transform = "translate(0)";
+  img12.style.transform = "translate(0)";
+  img13.style.transform = "translate(0)";
+  miniimg10.classList.remove("selectionned");
+  miniimg10.classList.add("unselectionned");
+  miniimg11.classList.remove("selectionned");
+  miniimg11.classList.add("unselectionned");
+  miniimg12.classList.remove("selectionned");
+  miniimg12.classList.add("unselectionned");
+  miniimg13.classList.remove("selectionned");
+  miniimg13.classList.add("unselectionned");
+
+  miniimg9.classList.remove("unselectionned");
+  miniimg9.classList.add("selectionned");
+  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  sliderDown.style.visibility = "hidden";
+  sliderUp.style.visibility = "visible";
+});
+miniimg10.addEventListener("click", () => {
+  sliderValue = 1;
+  img9.style.transform = "translate(-1000px)";
+  img10.style.transform = "translate(-1000px)";
+  img11.style.transform = "translate(-1000px)";
+  img12.style.transform = "translate(-1000px)";
+  img13.style.transform = "translate(-1000px)";
+  miniimg9.classList.remove("selectionned");
+  miniimg9.classList.add("unselectionned");
+  miniimg11.classList.remove("selectionned");
+  miniimg11.classList.add("unselectionned");
+  miniimg12.classList.remove("selectionned");
+  miniimg12.classList.add("unselectionned");
+  miniimg13.classList.remove("selectionned");
+  miniimg13.classList.add("unselectionned");
+
+  miniimg10.classList.remove("unselectionned");
+  miniimg10.classList.add("selectionned");
+  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  sliderDown.style.visibility = "visible";
+  sliderUp.style.visibility = "visible";
+});
+miniimg11.addEventListener("click", () => {
+  sliderValue = 2;
+  img9.style.transform = "translate(-2000px)";
+  img10.style.transform = "translate(-2000px)";
+  img11.style.transform = "translate(-2000px)";
+  img12.style.transform = "translate(-2000px)";
+  img13.style.transform = "translate(-2000px)";
+  miniimg9.classList.remove("selectionned");
+  miniimg9.classList.add("unselectionned");
+  miniimg10.classList.remove("selectionned");
+  miniimg10.classList.add("unselectionned");
+  miniimg12.classList.remove("selectionned");
+  miniimg12.classList.add("unselectionned");
+  miniimg13.classList.remove("selectionned");
+  miniimg13.classList.add("unselectionned");
+
+  miniimg11.classList.remove("unselectionned");
+  miniimg11.classList.add("selectionned");
+  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  sliderDown.style.visibility = "visible";
+  sliderUp.style.visibility = "visible";
+});
+miniimg12.addEventListener("click", () => {
+  sliderValue = 3;
+  img9.style.transform = "translate(-3000px)";
+  img10.style.transform = "translate(-3000px)";
+  img11.style.transform = "translate(-3000px)";
+  img12.style.transform = "translate(-3000px)";
+  img13.style.transform = "translate(-3000px)";
+  sliderUp.style.visibility = "visible";
+  miniimg9.classList.remove("selectionned");
+  miniimg9.classList.add("unselectionned");
+  miniimg10.classList.remove("selectionned");
+  miniimg10.classList.add("unselectionned");
+  miniimg11.classList.remove("selectionned");
+  miniimg11.classList.add("unselectionned");
+  miniimg13.classList.remove("selectionned");
+  miniimg13.classList.add("unselectionned");
+
+  miniimg12.classList.remove("unselectionned");
+  miniimg12.classList.add("selectionned");
+  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  sliderDown.style.visibility = "visible";
+  sliderUp.style.visibility = "visible";
+});
+miniimg13.addEventListener("click", () => {
+  sliderValue = 4;
+  img9.style.transform = "translate(-4000px)";
+  img10.style.transform = "translate(-4000px)";
+  img11.style.transform = "translate(-4000px)";
+  img12.style.transform = "translate(-4020px)";
+  img13.style.transform = "translate(-4000px)";
+  sliderDown.style.visibility = "visible";
+  miniimg9.classList.remove("selectionned");
+  miniimg9.classList.add("unselectionned");
+  miniimg10.classList.remove("selectionned");
+  miniimg10.classList.add("unselectionned");
+  miniimg11.classList.remove("selectionned");
+  miniimg11.classList.add("unselectionned");
+  miniimg12.classList.remove("selectionned");
+  miniimg12.classList.add("unselectionned");
+
+  miniimg13.classList.remove("unselectionned");
+  miniimg13.classList.add("selectionned");
+  slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+  sliderDown.style.visibility = "visible";
+  sliderUp.style.visibility = "hidden";
 });
