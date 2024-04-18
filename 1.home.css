@@ -246,7 +246,7 @@ body {
 .functioning-container {
   animation: appearance 10s;
 }
-.moding-container {
+.community-container {
   animation: appearance 10s;
 }
 
@@ -259,7 +259,7 @@ body {
 .functioning-container-section-title-1 span {
   font-family: Monaco;
 }
-.moding-container-section-title-2 span {
+.community-container-section-title-2 span {
   font-family: Monaco;
 }
 .story-container-subsection-title {
@@ -380,35 +380,35 @@ body {
   transform: rotate(90deg);
 }
 
-.moding-container {
+.community-container {
   margin-top: 90px;
 }
 
-.moding-container-section-title span {
+.community-container-section-title span {
   font-family: monaco;
 }
 
-.moding-container-subsection-title {
+.community-container-subsection-title {
   text-align: center;
   padding-top: 60px;
 }
-.moding-subsection-title span {
+.community-subsection-title span {
   font-family: monaco;
 }
-.moding-content-container-text {
+.community-content-container-text {
   font-size: 20px;
   width: 50%;
   margin-top: 90px;
 }
-.moding-container-grid-container {
+.community-container-grid-container {
   width: 100%;
 }
-.moding-content-container-grid {
+.community-content-container-grid {
   width: 70%;
   height: 300px;
   display: flex;
 }
-.moding-content-container-grid-subsection {
+.community-content-container-grid-subsection {
   width: 50%;
   height: 100%;
 }
@@ -779,7 +779,7 @@ body {
 #fs30 {
   font-size: 30px;
 }
-.moding-content-container-slider {
+.community-content-container-slider {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -886,4 +886,9 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.communnity-preface-container-text li {
+font-size: 30px;
+
 }

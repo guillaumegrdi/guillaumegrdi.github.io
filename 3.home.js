@@ -487,7 +487,7 @@ sliderDown.addEventListener("click", () => {
     miniimg12.classList.remove("unselectionned");
     miniimg13.classList.add("unselectionned");
     miniimg13.classList.remove("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décor dans le monde, comme ce château dans le désert.<h3/>`;
   }
   if (sliderValue == 3) {
     img9.style.transform = "translate(-2000px)";
@@ -499,7 +499,7 @@ sliderDown.addEventListener("click", () => {
     miniimg11.classList.remove("unselectionned");
     miniimg12.classList.add("unselectionned");
     miniimg12.classList.remove("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux animaux, comme cet éléphant.<h3/>`;
   }
   if (sliderValue == 2) {
     img9.style.transform = "translate(-1000px)";
@@ -511,7 +511,7 @@ sliderDown.addEventListener("click", () => {
     miniimg10.classList.remove("unselectionned");
     miniimg11.classList.add("unselectionned");
     miniimg11.classList.remove("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décoration, comme une horloge ou des bougies.<h3/>`;
   }
   if (sliderValue == 1) {
     img9.style.transform = "translate(0)";
@@ -523,7 +523,8 @@ sliderDown.addEventListener("click", () => {
     miniimg9.classList.remove("unselectionned");
     miniimg10.classList.add("unselectionned");
     miniimg10.classList.remove("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute des fenêtres.<h3/>`;
+
     sliderDown.style.visibility = "hidden";
   }
   sliderValue -= 1;
@@ -541,7 +542,7 @@ sliderUp.addEventListener("click", () => {
     miniimg9.classList.add("unselectionned");
     miniimg10.classList.remove("unselectionned");
     miniimg10.classList.add("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décoration, comme une horloge ou des bougies.<h3/>`;
   }
   if (sliderValue == 1) {
     img9.style.transform = "translate(-2000px)";
@@ -554,7 +555,7 @@ sliderUp.addEventListener("click", () => {
     miniimg10.classList.add("unselectionned");
     miniimg11.classList.remove("unselectionned");
     miniimg11.classList.add("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux animaux, comme cet éléphant.<h3/>`;
   }
   if (sliderValue == 2) {
     img9.style.transform = "translate(-3000px)";
@@ -567,7 +568,7 @@ sliderUp.addEventListener("click", () => {
     miniimg11.classList.add("unselectionned");
     miniimg12.classList.remove("unselectionned");
     miniimg12.classList.add("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décor dans le monde, comme ce château dans le désert.<h3/>`;
   }
   if (sliderValue == 3) {
     img9.style.transform = "translate(-4000px)";
@@ -580,7 +581,7 @@ sliderUp.addEventListener("click", () => {
     miniimg12.classList.add("unselectionned");
     miniimg13.classList.remove("unselectionned");
     miniimg13.classList.add("selectionned");
-    slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+    slidertextarea.innerHTML = `<h3>Ce mod permet au joueur de créer une usine pour automatiser une production de ressources.<h3/>`;
     sliderUp.style.visibility = "hidden";
   }
 
@@ -605,7 +606,8 @@ miniimg9.addEventListener("click", () => {
 
   miniimg9.classList.remove("unselectionned");
   miniimg9.classList.add("selectionned");
-  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  slidertextarea.innerHTML = `<h3>Ce mod ajoute des fenêtres.<h3/>`;
+
   sliderDown.style.visibility = "hidden";
   sliderUp.style.visibility = "visible";
 });
@@ -627,7 +629,8 @@ miniimg10.addEventListener("click", () => {
 
   miniimg10.classList.remove("unselectionned");
   miniimg10.classList.add("selectionned");
-  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décoration, comme une horloge ou des bougies.<h3/>`;
+
   sliderDown.style.visibility = "visible";
   sliderUp.style.visibility = "visible";
 });
@@ -649,7 +652,8 @@ miniimg11.addEventListener("click", () => {
 
   miniimg11.classList.remove("unselectionned");
   miniimg11.classList.add("selectionned");
-  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux animaux, comme cet éléphant.<h3/>`;
+
   sliderDown.style.visibility = "visible";
   sliderUp.style.visibility = "visible";
 });
@@ -672,7 +676,7 @@ miniimg12.addEventListener("click", () => {
 
   miniimg12.classList.remove("unselectionned");
   miniimg12.classList.add("selectionned");
-  slidertextarea.innerHTML = `<h4>je pense etre un pipi <h4/>`;
+  slidertextarea.innerHTML = `<h3>Ce mod ajoute de nombreux éléments de décor dans le monde, comme ce château dans le désert.<h3/>`;
   sliderDown.style.visibility = "visible";
   sliderUp.style.visibility = "visible";
 });
@@ -695,7 +699,8 @@ miniimg13.addEventListener("click", () => {
 
   miniimg13.classList.remove("unselectionned");
   miniimg13.classList.add("selectionned");
-  slidertextarea.innerHTML = `<h4>je pense etre un caca <h4/>`;
+  slidertextarea.innerHTML = `<h3>Ce mod permet au joueur de créer une usine pour automatiser une production de ressources.<h3/>`;
+
   sliderDown.style.visibility = "visible";
   sliderUp.style.visibility = "hidden";
 });
