@@ -130,7 +130,7 @@ body {
   position: fixed;
   box-shadow: 15px 15px 170px 40px rgb(255, 255, 255);
   z-index: 10;
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
 }
 .main-container {
   width: 100vw;
@@ -161,7 +161,7 @@ body {
 .nav-container {
   z-index: 2;
   background-color: black;
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
   position: fixed;
   width: 20vw;
   height: 90vh;
@@ -216,7 +216,6 @@ body {
 }
 .li-container li {
   padding-left: 15px;
-  width: 10vw;
 }
 .preface-title-container {
   display: flex;
@@ -239,15 +238,15 @@ body {
 }
 
 .story-container {
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
   width: 100%;
   padding-top: 50px;
 }
 .functioning-container {
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
 }
 .community-container {
-  animation: appearance 10s;
+  /* animation: appearance 10s; */
 }
 
 .story-container-section-title span {
@@ -888,7 +887,9 @@ body {
   margin-bottom: 30px;
 }
 
+.communnity-preface-container-text li span {
+  font-family: monaco;
+}
 .communnity-preface-container-text li {
-font-size: 30px;
-
+  font-size: 25px;
 }
