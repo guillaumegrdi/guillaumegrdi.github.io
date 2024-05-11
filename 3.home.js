@@ -77,6 +77,12 @@ li3.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
+li4.addEventListener("click", (e) => {
+  window.scrollTo({
+    top: 10070,
+    behavior: "smooth",
+  });
+});
 
 window.addEventListener("scroll", (e) => {
   if (window.scrollY < 350) {
@@ -125,10 +131,10 @@ window.addEventListener("scroll", (e) => {
     text5.style.animationDuration = "400ms";
     text5.style.opacity = "100%";
   }
-  if (window.scrollY < 2300) {
+  if (window.scrollY < 2500) {
     li2.style.backgroundColor = "";
   }
-  if (window.scrollY >= 2300) {
+  if (window.scrollY >= 2500) {
     li1.style.backgroundColor = "";
   }
 
@@ -214,13 +220,20 @@ window.addEventListener("scroll", (e) => {
     img8.style.animationDuration = "1.5s";
     img8.style.marginRight = "0";
   }
-  if (window.scrollY <= 5250) {
+  if (window.scrollY <= 5550) {
     li3.style.backgroundColor = "";
   }
 
-  if (window.scrollY >= 5250) {
+  if (window.scrollY >= 5550) {
     li2.style.backgroundColor = "";
     li3.style.backgroundColor = "rgb(43, 110, 49)";
+  }
+  if (window.scrollY <= 10070) {
+    li4.style.backgroundColor = "";
+  }
+  if (window.scrollY >= 10070) {
+    li3.style.backgroundColor = "";
+    li4.style.backgroundColor = "rgb(43, 110, 49)";
   }
 });
 
@@ -370,104 +383,6 @@ window.addEventListener("keydown", (e) => {
     imagetozoom1.style.marginTop = "-20px";
     imagetozoom2.style.width = "500px";
     imagetozoom2.style.marginTop = "-50px";
-  }
-});
-
-window.addEventListener("keydown", (e) => {
-  if (e.key == "k") {
-    window.addEventListener("keydown", (e) => {
-      if (e.key == "o") {
-        window.addEventListener("keydown", (e) => {
-          if (e.key == "n") {
-            window.addEventListener("keydown", (e) => {
-              if (e.key == "a") {
-                window.addEventListener("keydown", (e) => {
-                  if (e.key == "m") {
-                    window.addEventListener("keydown", (e) => {
-                      if (e.key == "i") {
-                        window.addEventListener("keydown", (e) => {
-                          if (e.key == "c") {
-                            window.addEventListener("keydown", (e) => {
-                              if (e.key == "o") {
-                                window.addEventListener("keydown", (e) => {
-                                  if (e.key == "d") {
-                                    window.addEventListener("keydown", (e) => {
-                                      if (e.key == "e") {
-                                      }
-                                    });
-                                  }
-                                });
-                              }
-                            });
-                          }
-                        });
-                      }
-                    });
-                  }
-                });
-              }
-            });
-          }
-        });
-      }
-    });
-  }
-});
-
-window.addEventListener("keydown", (e) => {
-  console.log(e);
-  if (e.key == "ArrowRight") {
-    window.addEventListener("keydown", (e) => {
-      if (e.key == "ArrowUp") {
-        window.addEventListener("keydown", (e) => {
-          if (e.key == "ArrowDown") {
-            window.addEventListener("keydown", (e) => {
-              if (e.key == "ArrowLeft") {
-                window.addEventListener("keydown", (e) => {
-                  if (e.key == "a") {
-                    window.addEventListener("keydown", (e) => {
-                      if (e.key == "ArrowRight") {
-                        window.addEventListener("keydown", (e) => {
-                          if (e.key == "b") {
-                            window.addEventListener("keydown", (e) => {
-                              if (e.key == "ArrowRight") {
-                                window.addEventListener("keydown", (e) => {
-                                  if (e.key == "a") {
-                                    window.addEventListener("keydown", (e) => {
-                                      if (e.key == "b") {
-                                        window.addEventListener(
-                                          "keydown",
-                                          (e) => {
-                                            if (e.key == "ArrowLeft") {
-                                              window.addEventListener(
-                                                "keydown",
-                                                (e) => {
-                                                  if (e.key == "Escape") {
-                                                    window.open("2.loup.html");
-                                                  }
-                                                }
-                                              );
-                                            }
-                                          }
-                                        );
-                                      }
-                                    });
-                                  }
-                                });
-                              }
-                            });
-                          }
-                        });
-                      }
-                    });
-                  }
-                });
-              }
-            });
-          }
-        });
-      }
-    });
   }
 });
 
