@@ -4,9 +4,9 @@ def triangle() :
     l2 = int(input('veuillez entrer la longueur du second coté :   '))
     l3 = int(input('veuillez entrer la longueur du dernier coté :   '))
     
-    if l1 or l2 or l3 == 0:
-      print('veuillez entrer des valeurs correctes')
-      triangle()
+    # if l1 or l2 or l3 == 0:
+    #   print('veuillez entrer des valeurs correctes')
+    #   triangle()
 
     if l1**2 + l2**2 == l3**2:
      print('le triangle est rectangle')
