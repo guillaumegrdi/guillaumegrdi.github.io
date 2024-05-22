@@ -59,6 +59,13 @@ const body = document.querySelector("body");
 const replaybtn = document.getElementById("replay-btn");
 console.log(text2);
 
+const gotop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 li1.addEventListener("click", (e) => {
   window.scrollTo({
     top: 400,

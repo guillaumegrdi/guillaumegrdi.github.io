@@ -20,6 +20,11 @@
   padding: 0;
   display: flex;
 }
+.terminalcontainer {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
 .lineContainer {
   border-radius: 20px 0 0 20px;
   width: 5%;
@@ -35,13 +40,14 @@
   font-size: 20px;
   padding: 0;
   height: 23px;
+  padding-left: 3px;
 }
 .textareaContainer {
   width: 95%;
 }
 textarea#terminalArea {
   background-color: rgb(25, 26, 25);
-  width: 80%;
+  width: 100%;
   height: 480px;
   margin: 0;
   padding: 0;

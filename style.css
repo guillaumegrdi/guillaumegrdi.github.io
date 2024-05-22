@@ -1,0 +1,102 @@
+@font-face {
+  font-family: grotesk;
+  src: url(4.SpaceGrotesk-VariableFont_wght.ttf);
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.buttoncontainer {
+  height: 50px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(255, 36, 68), rgb(255, 107, 129));
+  border-radius: 30px;
+  transition: 300ms;
+  cursor: pointer;
+  margin: 200px;
+  transform: scale(2);
+}
+
+.MainBtn {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  border: 0;
+  background: linear-gradient(to right, rgb(255, 36, 68), rgb(255, 107, 129));
+  color: white;
+  border-radius: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: grotesk;
+  font-weight: 900;
+}
+.buttoncontainer#minecraftBtn {
+  height: 50px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(36, 138, 255), rgb(130, 186, 251));
+  border-radius: 30px;
+  transition: 300ms;
+  cursor: pointer;
+  margin: 200px;
+}
+
+.MainBtn#minecraftBtn {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  border: 0;
+  background: linear-gradient(to right, rgb(36, 138, 255), rgb(130, 186, 251));
+  color: white;
+  border-radius: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: grotesk;
+  font-weight: 900;
+}
+
+.buttoncontainer:hover {
+  transform: scale(1.7);
+  box-shadow: 0px 0px 20px rgb(255, 36, 68);
+}
+.buttoncontainer#minecraftBtn:hover {
+  transform: scale(1.7);
+  box-shadow: 0px 0px 20px rgb(36, 113, 255);
+}
+
+.buttoncontainer#purpleBtn {
+  height: 50px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(197, 36, 255), rgb(245, 130, 251));
+  border-radius: 30px;
+  transition: 300ms;
+  cursor: pointer;
+  margin: 200px;
+}
+
+.MainBtn#purpleBtn {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  border: 0;
+  background: linear-gradient(to right, rgb(197, 36, 255), rgb(245, 130, 251));
+  color: white;
+  border-radius: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: grotesk;
+  font-weight: 900;
+}
+.buttoncontainer#purpleBtn:hover {
+  transform: scale(1.7);
+  box-shadow: 0px 0px 20px rgb(197, 36, 255);
+}
