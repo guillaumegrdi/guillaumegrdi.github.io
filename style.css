@@ -165,7 +165,7 @@ body {
   padding-top: 50px;
   display: flex;
   width: 7%;
-  position: fixed;
+  /* position: fixed; */
   right: 0;
   height: 100%;
 }
