@@ -26,7 +26,7 @@ body {
 .backgroundContainer2 {
   height: 1800px;
   width: 35%;
-  background-color: #ccf283;
+  background-color: #faf564;
 }
 
 .mainContainer {
@@ -50,7 +50,7 @@ body {
 .titleLogoContainer {
   width: 80%;
   height: 50%;
-  color: #ccf283;
+  color: #faf564;
   display: flex;
   align-items: center;
   font-size: 40px;
@@ -86,7 +86,7 @@ body {
   color: #ffffff;
 }
 .mainDescriptionTitleContainer span {
-  color: #ccf283;
+  color: #faf564;
   text-shadow: 5px 5px 0px #ff0000bd;
   transition: 200ms;
 }
@@ -149,8 +149,8 @@ body {
   padding-left: 20px;
   width: 70%;
   height: 70%;
-  border-top: 6px solid #ccf283;
-  border-left: 6px solid #ccf283;
+  border-top: 6px solid #faf564;
+  border-left: 6px solid #faf564;
   border-top-left-radius: 15px;
 }
 .secondImageContainer img {
