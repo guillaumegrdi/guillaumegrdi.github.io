@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- -------------- -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
+    <!-- -------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #imgtest {
+        filter: opacity(100%) contrast(50%) grayscale(50%);
+        transition: 300ms;
+        cursor: pointer;
+      }
+      #imgtest:hover {
+        transition: 2s;
+        filter: opacity(0);
+      }
+      #absoluteText {
+        margin-top: 30px;
+        margin-left: 100px;
+        position: absolute;
+        z-index: -1;
+        font-family: grotesk;
+      }
+      .absoluteDiv {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        top: 145px;
+        right: 225px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backgroundContainer">
+      <div class="backgroundContainer1"></div>
+      <div class="backgroundContainer2"></div>
+    </div>
+
+    <div class="mainContainer">
+      <div class="firstColContainer">
+        <div class="titleContainer">
+          <div class="titleLogoContainer">
+            <span>Esteban,</span>
+          </div>
+        </div>
+        <div class="descriptionContainer">
+          <div class="descriptionTextContainer">
+            <div class="mainDescriptionTitleContainer">
+              <span>mon copain, </span>
+            </div>
+
+            <div class="secondDescriptionTitleContainer">
+              <span
+                >voici une énigme qui te permettra, si tu la résoue, d'accéder
+                au cadeau tant convoité.</span
+              >
+            </div>
+
+            <div class="thirdDescriptionTitleContainer">
+              <div class="mainSubDescription">
+                Pour cela, tu devras redoubler d'imagination,
+              </div>
+              <div class="secondSubDescription">
+                et te lancer dans une aventure or du commun.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondColContainer">
+        <div class="absoluteDiv" onclick="window.open('esteban2.html')"></div>
+        <div class="imageContainer">
+          <div class="secondImageContainer">
+            <span id="absoluteText">L’élan de bleu mène à la raison.</span>
+            <img
+              id="imgtest"
+              src="minecraft-mod-adware-google-play-revisited-featured.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="thirdColContainer">
+        <div class="navContainer">
+          <div class="navUlContainer" id="navUl">
+            <ul>
+              <li id="li1">Aventure</li>
+              <li id="li2">Exploration</li>
+              <li id="li3">Artisanat</li>
+              <li id="li4">Créativité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="esteban.js"></script>
+  </body>
+</html>

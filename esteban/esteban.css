@@ -1,0 +1,25 @@
+#imgtest {
+  filter: opacity(100%) contrast(50%) grayscale(50%);
+  transition: 300ms;
+  cursor: pointer;
+}
+#imgtest:hover {
+  transition: 2s;
+  filter: opacity(0);
+}
+#absoluteText {
+  margin-top: 30px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: -1;
+  font-family: grotesk;
+}
+.absoluteDiv {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: rgba(255, 0, 0, 0);
+  top: 145px;
+  right: 225px;
+  cursor: pointer;
+}

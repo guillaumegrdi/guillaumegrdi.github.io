@@ -11,6 +11,7 @@ const li1 = document.getElementById("li1");
 const li2 = document.getElementById("li2");
 const li3 = document.getElementById("li3");
 const li4 = document.getElementById("li4");
+
 // ----------------------------------------- Functions----------------------------//
 const scroll = (a) => {
   window.scrollTo({
