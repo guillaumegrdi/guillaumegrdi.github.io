@@ -626,3 +626,5 @@ miniimg13.addEventListener("click", () => {
   sliderDown.style.visibility = "visible";
   sliderUp.style.visibility = "hidden";
 });
+
+windoz.addEventListener("click", () => {});
